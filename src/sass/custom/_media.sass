@@ -1,0 +1,33 @@
+.phone_gallery_wrapper
+    display: flex
+    flex-flow: column wrap
+    justify-content: center
+    align-items: center
+    margin-top: 20px
+    position: relative
+    z-index: 5
+    
+    
+    
+@include mw480
+    
+    .intro_contacts_media
+        display: flex
+        flex-direction: row
+        
+@include mw680
+    
+    .intro_contacts_media
+        flex-direction: column
+        
+
+@include mw980
+
+    .intro_contacts_media
+        box-shadow: 0px 0px 19px -4px rgba(0,0,0,0.75)
+        border-radius: 60px 60px 0 0
+        background-color: #ffffff
+        
+    .phone_gallery_wrapper
+        justify-content: flex-start
+        flex-flow: row nowrap

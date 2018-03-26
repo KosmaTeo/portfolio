@@ -1,0 +1,89 @@
+.contacts
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    
+.contacts__link
+    font-size: 20vw
+    padding: 5px 15px 5px 15px
+    background-color: $glass-color
+    filter: drop-shadow(35px 50px 5px rgba(255,255,255, 0.1))
+    border-radius: $border-radius
+    border: $border
+    margin-bottom: $margin-bottom
+    cursor: pointer
+    position: relative
+    
+.contacts__link--static
+    color: $white
+    transition: all .3s ease-in-out
+    
+.contacts__link--github:hover
+    transform: rotate(360deg)
+    
+.contacts__link--show
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    color: $white
+    text-align: center
+    transition: all .3s ease-in-out
+    opacity: 0
+    
+.contacts__link--show-fb
+    display: flex
+    justify-content: center
+    align-items: center
+
+.contacts__link--mail:hover
+    color: transparent
+    
+.contacts__link--mail:hover > .contacts__link--show
+    opacity: 0.9
+    
+.contacts__link--fb:hover
+    color: transparent
+    
+.contacts__link--fb:hover > .contacts__link--show
+    opacity: 0.9
+    
+@include mw480
+    .contacts
+        flex-flow: column-reverse wrap
+        
+    .contacts__link
+        font-size: 6rem
+    
+        
+    .miniheader__contacts
+        display: none
+
+
+@include mw680
+    .contacts
+        flex-flow: row nowrap
+        //justify-content: space-evenly
+        justify-content: center
+        background-color: $glass-color
+
+    .contacts__link
+        background-color: transparent
+        
+@include mw980
+    
+    .contacts
+        background-color: $glass-color980
+        
+    .contacts__link--static, .contacts__link--show
+        color: #203066
+    
+        
+
+
+
+
+
+
+    
