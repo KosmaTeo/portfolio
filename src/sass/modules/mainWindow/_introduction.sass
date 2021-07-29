@@ -1,0 +1,32 @@
+.intro
+    background-color: $glass-color
+    //filter: drop-shadow(-23px 50px 5px $drop-color)
+    margin-bottom: $margin-bottom
+    padding: 20px
+    display: flex
+    flex-flow: column wrap
+    justify-content: center
+    border-radius: $border-radius
+    border: $border
+    font-size: 1.6rem
+    
+.intro__h1
+    font-size: 2rem
+    
+@include mw480
+    .intro
+        font-size: 2rem
+    .intro__h1
+        font-size: 3rem
+        
+@include mw680
+    .intro
+        line-height: 150%
+        
+@include mw980
+    .intro
+        background-color: transparent//$glass-color980
+        filter: none
+        font-size: 2rem
+        margin-bottom: 0
+        padding: 20px 45px

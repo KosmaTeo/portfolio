@@ -1,0 +1,48 @@
+.page-footer
+    background-color: $glass-color
+    //filter: drop-shadow(-23px 50px 5px $drop-color)
+    margin-bottom: $margin-bottom
+    padding: 20px
+    display: flex
+    flex-flow: column wrap
+    justify-content: center
+    border-radius: $border-radius
+    border: $border
+    font-size: 1.6rem
+    
+    
+.page-footer__contact:link
+        color: #efefef
+    
+.page-footer__contact:visited
+        color: #efefef
+    
+.page-footer__contact:hover
+        color: #efefef
+        
+.page-footer__copyright
+    margin: 30px auto 0 auto
+    
+@include mw480
+    .page-footer
+        font-size: 2rem
+
+        
+@include mw980
+    .page-footer
+        background-color: $glass-color980
+        filter: none
+        font-size: 2rem
+        margin-bottom: 50px
+        padding: 20px 45px
+        box-shadow: 0px 0px 19px -4px rgba(0,0,0,0.75)
+        border-radius: 60px
+        
+    .page-footer__contact:link
+        color: #203066
+    
+    .page-footer__contact:visited
+        color: #203066
+    
+    .page-footer__contact:hover
+        color: #203066
